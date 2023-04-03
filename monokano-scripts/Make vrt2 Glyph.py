@@ -98,8 +98,7 @@ else:
 				# Width Em
 				newLayer.width = emWidth
 				# empty
-				newLayer.paths = []
-				newLayer.components = []
+				newLayer.shapes = []
 				newLayer.anchors = []
 				
 				# If baseGlyph is not empty, add component 
@@ -120,7 +119,7 @@ else:
 			
 			except Exception as e:
 				Font.enableUpdateInterface()
-				print traceback.format_exc()
+				print(traceback.format_exc())
 		
 		Font.enableUpdateInterface()
 		showAlert(Done, Update_OpenType_feature)
