@@ -6,6 +6,7 @@ __doc__="""
 Creates a vrt2 glyph (.rotat) based on the selected glyph.
 選択されたグリフを基にして vrt2グリフ（.rotat）を作成する。
 """
+from __future__ import division, print_function, unicode_literals
 from AppKit import NSAlert
 import traceback
 
